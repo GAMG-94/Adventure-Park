@@ -1,0 +1,62 @@
+<div class="body">
+        <div>
+            <h1>Login - Registro</h1>
+        </div>
+    <main>
+            <div class="container">
+                <div class="Login-Registro">
+                    <div class="interior" id="tarjeta">
+                        <div class="frontal">
+                            <h2>Login</h2>
+                            <form>                                
+                                <span class="nom-propiedades-log">Correo</span>
+                                <input type="text" class="input-box" required>
+                                <br>
+                                <span class="nom-propiedades-log">Contraseña</span>
+                                <input type="password" class="input-box" required>
+                                <button type="submit" class="btn-ingresar">Ingresar</button>
+                                <br>
+                                <br>
+                                <a href="recuperar_password.html">Olvide Mi Contraseña</a>                        
+                            </form>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <button type="button" class="btn" onclick="openRegistrarme()">Registrarme</button>
+                        </div>
+                        <div class="posterior">
+                            <h2>Registrarme</h2>
+                            <form>
+                                <br>
+                                <span class="nom-propiedades">Nombres</span>
+                                <input type="text" class="input-box" required>
+                                <br>
+                                <span class="nom-propiedades">Apellidos</span>
+                                <input type="text" class="input-box" required>
+                                <br>
+                                <span class="nom-propiedades">Correo</span>
+                                <input type="email" class="input-box" required>
+                                <br>
+                                <span class="nom-propiedades">Celular</span>
+                                <input type="text" class="input-box" required>
+                                <br>                                
+                                <button type="submit" class="btn-ingresar">Registrarme</button>
+                            </form>
+                            <p class="parrafo">¡Ya tengo una cuenta!</p>
+                            <button type="button" class="btn" onclick="openLogin()">Iniciar Sesión</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                var tarjeta = document.getElementById("tarjeta");
+                function openRegistrarme(){
+                    tarjeta.style.transform = "rotateY(-180deg)"
+                }
+                function openLogin(){
+                    tarjeta.style.transform = "rotateY(0deg)"
+                }
+            </script>
+    </main>
+</div>

@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    height: calc(100vh - 60px);
+    width: calc(100% - 20px);
+    background-image: url(src/assets/img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    *transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+/* TITULO */
+
+main{
+    width: calc(100vw - 20px);
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    margin: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0067a2;    
+    border-radius: 20px;
+}
+
+img{
+    width: 60px;    
+}
+
+h1{
+    text-align: center;
+    color: #ff3700;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    align-items: center;
+    margin-top: 50px;
+    font-size: 60px;
+    *text-transform: uppercase;
+}
+
+/* TARJETAS DE LAS ENTRADAS */
+
+.main{
+    margin-top: 120px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.tarjeta{
+    width: 420px;
+    height: 430px;
+    margin: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.8);
+    transition: 0.5s;
+}
+
+.tarjeta-header{
+    margin-top: 0;
+    width: 100%;
+    height: 100%px;
+    background: #000000;
+    overflow: hidden;
+}
+
+.tarjeta-img{
+    min-width: 100%;
+    width: auto;
+    height: 100%;    
+}
+
+tarjeta-body{
+    height: 180px;
+    padding: 16px;
+    text-align: center;
+    font-family: "Roboto";
+}
+
+.local{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+    color: orangered;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 28px;
+    margin: 6px 0;
+    padding: 0 10px;
+}
+
+.titulo-bronce{
+    text-align: center;
+    font-size: 28px;
+    margin: 6px 0;
+    padding: 0 10px;
+}
+
+.descripcion{
+    text-align: center;
+    font-size: 15px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.descripcion-bronce{
+    text-align: center;
+    font-size: 15px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pie{
+    height: auto;
+    width: 60%;
+    margin-top: 18px;
+    text-align: center;
+    background-color: orangered;
+    border-top-right-radius: 20px;
+    transition: all 500ms;
+}
+
+.pie a{
+    color: #fff;
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    font-family: "Arial", sans-serif;
+    font-weight: 800;
+}
+
+.pie:hover{
+    background-color: rgba(255, 115, 0, 0.963);
+    transform: scale(1.2);
+    margin-bottom: 0;
+}
+
+.carrito{
+    float: right;
+    height: auto;
+    width: 36%;
+    margin-top: 26px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;font-weight: 900;
+    font-family: "Arial", sans-serif;
+    color: orangered;
+}
+
+.tarjeta:hover{
+    transform: scale3d(1.2,1.2,3);
+}
+
+footer{
+    padding: 60px;
+}
+
+/* CONTENIDO RESPONSIVO */
+
+@media screen and (max-width: 450px){
+
+    .tarjeta-body{
+        height: 150px;        
+    }
+
+    .local{
+        font-size: 18px;
+    }
+
+    .titulo{
+        font-size: 20px;
+    }
+
+    .titulo-bronce{
+        font-size: 20px;
+    }
+
+    footer{
+        padding: 60px;
+    }
+}
+
+@media screen and (max-width: 310px){
+
+    h1{
+        font-size: 40px;
+    }
+
+    .tarjeta{
+        width: 360px;
+        height: 300px;
+    }
+
+    .tarjeta-img{
+        width: 220px;
+    }
+
+    .tarjeta-body{
+        height: 110px;        
+    }
+
+    .local{
+        font-size: 20px;
+    }
+
+    .titulo{
+        font-size: 24px;
+    }
+
+    .titulo-bronce{
+        font-size: 20px;
+    }
+
+    .descripcion{
+        display: none;
+    }
+
+    .descripcion-bronce{
+        display: none;
+    }
+
+    .botones{
+        font-size: 10px;
+    }
+
+    footer{
+        padding: 60px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

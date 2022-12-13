@@ -1,0 +1,29 @@
+ <nav>
+    <div class="nav-wrapper grey darken-4">
+      <a routerLink="" class="brand-logo"><span>Adventure</span> Park</a>
+      <a routerLink="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li *ngIf="!sesionActiva"><a routerLink="/seguridad/atracciones">Atracciones</a></li>
+        <li *ngIf="!sesionActiva"><a routerLink="/seguridad/restaurantes">Restaurantes</a></li>
+        <li *ngIf="!sesionActiva"><a routerLink="/seguridad/tickets">Tickets</a></li>
+        <li *ngIf="!sesionActiva"><a routerLink="/seguridad/login">Login</a></li>
+        <li *ngIf="!sesionActiva"><a routerLink="/seguridad/registro">Registrarme</a></li>
+        <li *ngIf="sesionActiva"><a routerLink="/seguridad/perfil">Perfil</a></li>
+        <li *ngIf="sesionActiva"><a routerLink="/seguridad/administracion">Administracion</a></li>
+        <li *ngIf="sesionActiva"><a routerLink="/seguridad/salir">Salir</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li *ngIf="!sesionActiva"><a routerLink="/seguridad/atracciones">Atracciones</a></li>
+    <li *ngIf="!sesionActiva"><a routerLink="/seguridad/restaurantes">Restaurantes</a></li>
+    <li *ngIf="!sesionActiva"><a routerLink="/seguridad/tickets">Tickets</a></li>
+    <li *ngIf="!sesionActiva"><a routerLink="/seguridad/login">Login</a></li>
+    <li *ngIf="!sesionActiva"><a routerLink="/seguridad/registro">Registrarme</a></li>
+    <li *ngIf="sesionActiva"><a routerLink="/seguridad/perfil">Perfil</a></li>
+    <li *ngIf="sesionActiva"><a routerLink="/seguridad/administracion">Administracion</a></li>
+    <li *ngIf="sesionActiva"><a routerLink="/seguridad/salir">Salir</a></li>
+  </ul>
+
+  <script src="../../../assets/Js/navbar.js"></script>

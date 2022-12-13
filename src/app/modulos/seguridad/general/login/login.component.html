@@ -1,0 +1,94 @@
+<div>
+  <h1>Login</h1>
+</div>
+<main>
+  <div class="container">
+    <div class="Login-Registro">
+      <div class="interior" id="tarjeta">
+        <div class="frontal">
+          <h2>Login</h2>
+          <form [formGroup]="formularioDatos">
+            <span class="nom-propiedades-log">Correo</span>
+            <input type="text" class="input-box" formControlName="usuario" />
+            <div class="errorValidacion">
+              <label
+                class="validacion"
+                *ngIf="
+                  formularioDatos.controls['usuario'].errors &&
+                  formularioDatos.controls['usuario'].dirty
+                "
+              >
+                El Correo Ingresado No Es Valido
+              </label>
+            </div>
+            <br />
+            <span class="nom-propiedades-log">Contraseña</span>
+            <input
+              type="password"
+              class="input-box"
+              formControlName="password"
+            />
+            <div class="errorValidacion">
+              <label
+                class="validacion"
+                *ngIf="
+                  formularioDatos.controls['password'].errors &&
+                  formularioDatos.controls['password'].dirty
+                "
+              >
+                La Contraseña Debe Tener Un Minimo De 8 Caracteres
+              </label>
+            </div>
+            <br />
+            <a class="recuperar" href="/seguridad/recuperar-password">Olvidé mi contraseña</a>
+            <br>
+            <div class="center">
+              <form [formGroup]="formularioDatos">
+                <ngx-recaptcha2
+                  #captchaElem
+                  [siteKey]="siteKey"
+                  formControlName="recaptcha">
+                </ngx-recaptcha2>
+              </form>
+            </div>
+            <button (click)="Login()" type="submit" class="btn-ingresar">
+              Ingresar
+            </button>
+          </form>
+        </div>
+        <div class="posterior">
+          <h2>Registrarme</h2>
+          <form>
+            <br />
+            <span class="nom-propiedades">Nombres</span>
+            <input type="text" class="input-box" />
+            <br />
+            <span class="nom-propiedades">Apellidos</span>
+            <input type="text" class="input-box" />
+            <br />
+            <span class="nom-propiedades">Correo</span>
+            <input type="email" class="input-box" />
+            <br />
+            <span class="nom-propiedades">Celular</span>
+            <input type="text" class="input-box" />
+            <br />
+            <button type="submit" class="btn-ingresar">Registrarme</button>
+          </form>
+          <p class="parrafo">¡Ya tengo una cuenta!</p>
+          <button type="button" class="btn" onclick="openLogin()">
+            Iniciar Sesión
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var tarjeta = document.getElementById("tarjeta");
+    function openRegistrarme() {
+      tarjeta.style.transform = "rotateY(-180deg)";
+    }
+    function openLogin() {
+      tarjeta.style.transform = "rotateY(0deg)";
+    }
+  </script>
+</main>

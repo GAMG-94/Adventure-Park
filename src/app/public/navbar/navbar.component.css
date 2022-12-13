@@ -1,0 +1,46 @@
+.brand-logo{
+    margin-left: 20px;
+    color: red;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+span{
+    color: #fff;
+}
+
+.hide-on-med-and-down li a{
+    font-size: 17px;
+    transition: all 600ms;
+    font-family: 'Russo One', sans-serif;
+}
+
+.hide-on-med-and-down li a:hover{
+    color: red;
+}
+
+/* MENU TITULO RESPONSIVO */
+
+@media screen and (max-width:600px){
+    .brand-logo {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:450px){
+    .brand-logo {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width:370px){
+    .brand-logo {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:338px){
+    .brand-logo {
+        font-size: 12px;
+    }
+}

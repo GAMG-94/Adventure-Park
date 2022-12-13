@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
+}
+
+.Mensaje-error{
+    display: inline;
+    height: 680px;    
+    width: 900px;
+}
+
+.Error{
+    padding: 0px 8px;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.image{
+    height: 240px;
+}
+
+.textos{
+    margin-top: 60px;
+    width: 20%;
+    text-align: center;
+    font-size: 20px;    
+}
+
+.lamento{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.ap{
+    margin-top: 80px;
+    text-transform: uppercase;
+    color: red;
+    margin-bottom: 20px;
+    font-size: 30px;    
+    font-family: 'Russo One';
+}
+
+.uy{
+    text-transform: uppercase;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.gracias{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.imagen{
+    float: right;
+    height: 240px;
+}
